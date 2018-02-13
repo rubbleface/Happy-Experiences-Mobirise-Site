@@ -1,3 +1,9 @@
+/*!
+ * Name    : Just Another Parallax [Jarallax]
+ * Version : 1.1.0
+ * Author  : _nK http://nkdev.info
+ * GitHub  : https://github.com/nk-o/jarallax
+ */
 (function(e){"function"===typeof define&&define.amd?define(["jquery"],e):"undefined"!==typeof exports?module.exports=e(require("jquery")):e(jQuery)})(function(e){Date.now||(Date.now=function(){return(new Date).getTime()});window.requestAnimationFrame||function(){for(var b=["webkit","moz"],a=0;a<b.length&&!window.requestAnimationFrame;++a){var c=b[a];window.requestAnimationFrame=window[c+"RequestAnimationFrame"];window.cancelAnimationFrame=window[c+"CancelAnimationFrame"]||window[c+"CancelRequestAnimationFrame"]}if(/iP(ad|hone|od).*OS 6/.test(window.navigator.userAgent)||
 !window.requestAnimationFrame||!window.cancelAnimationFrame){var d=0;window.requestAnimationFrame=function(a){var b=Date.now(),c=Math.max(d+16,b);return setTimeout(function(){a(d=c)},c-b)};window.cancelAnimationFrame=clearTimeout}}();var l=function(){for(var b=["transform","WebkitTransform","MozTransform","OTransform","msTransform"],a=document.createElement("div"),c=0;c<b.length;c++)if(a&&void 0!==a.style[b[c]])return b[c];return!1}(),m=function(){if(!window.getComputedStyle)return!1;var b=document.createElement("p"),
 a,c={webkitTransform:"-webkit-transform",OTransform:"-o-transform",msTransform:"-ms-transform",MozTransform:"-moz-transform",transform:"transform"};(document.body||document.documentElement).insertBefore(b,null);for(var d in c)void 0!==b.style[d]&&(b.style[d]="translate3d(1px,1px,1px)",a=window.getComputedStyle(b).getPropertyValue(c[d]));(document.body||document.documentElement).removeChild(b);return void 0!==a&&0<a.length&&"none"!==a}(),n=-1<navigator.userAgent.toLowerCase().indexOf("android"),p=
